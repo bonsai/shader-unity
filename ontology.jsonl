@@ -1,4 +1,4 @@
-{"type":"event","id":"unity-shader-study","name":"Unity Shader 完全に理解した勉強会","theme":"shader","domain":"unity","technologies":["shaderlab","cg-hlsl","surface-shader","shader-graph","compute-shader"],"formats":["online","offline"]}
+{"type":"event","id":"unity-shader-study","name":"Unity Shader 完全に理解した勉強会","theme":"shader","domain":"unity","date":"2026-10-02","start_time":"18:30","end_time":"22:00","timezone":"Asia/Tokyo","venue":"DeNA ラウンジ","address":"東京都渋谷区渋谷二丁目24番12号 渋谷スクランブルスクエア 40F","formats":["offline","online"],"online_platform":"YouTube Live","hashtag":"#unity完全理解","group":"Unity 〇〇完全に理解した 勉強会","technologies":["shaderlab","cg-hlsl","surface-shader","shader-graph","compute-shader"],"sessions":["session-intro","session-shader-walk","session-ar-toon","session-undersea-vj","session-tgs-shadow","session-sponsor","session-closing","session-networking"]}
 {"type":"concept","id":"shader","name":"Shader"}
 {"type":"technology","id":"unity","name":"Unity"}
 {"type":"technology","id":"shaderlab","name":"ShaderLab"}
@@ -6,9 +6,38 @@
 {"type":"technology","id":"surface-shader","name":"Surface Shader"}
 {"type":"technology","id":"shader-graph","name":"Shader Graph"}
 {"type":"technology","id":"compute-shader","name":"Compute Shader"}
+{"type":"technology","id":"urp","name":"Unity URP"}
+{"type":"technology","id":"gpu-instancing","name":"GPU Instancing"}
+{"type":"concept","id":"volumetric-light-shafts","name":"Volumetric Light Shafts"}
+{"type":"concept","id":"toon","name":"Toon"}
+{"type":"concept","id":"shadow","name":"Shadow"}
 {"type":"format","id":"online","name":"Online"}
 {"type":"format","id":"offline","name":"Offline"}
+{"type":"platform","id":"youtube-live","name":"YouTube Live"}
+{"type":"community","id":"unity-understand-study","name":"Unity 〇〇完全に理解した 勉強会"}
+{"type":"venue","id":"dena-lounge","name":"DeNA ラウンジ"}
+{"type":"person","id":"k_y_kenzen","name":"k_y_kenzen","role":"Graphics Engineer"}
+{"type":"person","id":"tsukasan","name":"つかさんさん","role":"Unity講師・エンジニア"}
+{"type":"person","id":"gam0022","name":"gam0022","role":"Graphics Engineer / VJ / シェーダー芸人"}
+{"type":"person","id":"sunadokei","name":"砂時計","role":"学生・個人開発者"}
+{"type":"session","id":"session-intro","title":"イントロダクション","start":"19:00","end":"19:05","speaker":null}
+{"type":"session","id":"session-shader-walk","title":"シェーダーの歩き方","start":"19:05","end":"19:15","speaker":"k_y_kenzen","topics":["shader-code-reading"]}
+{"type":"session","id":"session-ar-toon","title":"AR合成では実写をToonに寄せる","start":"19:15","end":"19:25","speaker":"tsukasan","topics":["toon","color-temperature","color-grading","depth-of-field","atmosphere"]}
+{"type":"session","id":"session-undersea-vj","title":"Unity URPによる海底をテーマにしたVJシステムの解説","start":"19:25","end":"19:35","speaker":"gam0022","topics":["urp","volumetric-light-shafts","compute-shader","gpu-instancing"]}
+{"type":"session","id":"session-tgs-shadow","title":"TGSのために半年でShaderLab/HLSLを完全に理解した 〜Shadow編〜","start":"19:35","end":"19:45","speaker":"sunadokei","topics":["shaderlab","cg-hlsl","shadow","shader-graph"]}
+{"type":"session","id":"session-sponsor","title":"スポンサー企業紹介","start":"19:45","end":"19:55"}
+{"type":"session","id":"session-closing","title":"中締め","start":"19:55","end":"20:00"}
+{"type":"session","id":"session-networking","title":"懇親会","start":"20:00","end":"21:30","activity":"networking"}
+{"type":"audience","id":"shader-expert","name":"Unity Shaderを完全に理解している人"}
+{"type":"audience","id":"shader-learner","name":"Unity Shaderを完全に理解したい人"}
 {"type":"relation","name":"hasTheme","domain":"event","range":"concept"}
 {"type":"relation","name":"hasDomain","domain":"event","range":"technology"}
 {"type":"relation","name":"hasTechnology","domain":"event","range":"technology"}
 {"type":"relation","name":"hasFormat","domain":"event","range":"format"}
+{"type":"relation","name":"hasSession","domain":"event","range":"session"}
+{"type":"relation","name":"hasSpeaker","domain":"session","range":"person"}
+{"type":"relation","name":"hasTopic","domain":"session","range":"concept|technology"}
+{"type":"relation","name":"targets","domain":"event","range":"audience"}
+{"type":"relation","name":"heldAt","domain":"event","range":"venue"}
+{"type":"relation","name":"streamedOn","domain":"event","range":"platform"}
+{"type":"relation","name":"memberOf","domain":"person","range":"community"}
