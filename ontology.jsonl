@@ -1,0 +1,14 @@
+{"type":"event","id":"unity-shader-study","name":"Unity Shader 完全に理解した勉強会","theme":"shader","domain":"unity","technologies":["shaderlab","cg-hlsl","surface-shader","shader-graph","compute-shader"],"formats":["online","offline"]}
+{"type":"concept","id":"shader","name":"Shader"}
+{"type":"technology","id":"unity","name":"Unity"}
+{"type":"technology","id":"shaderlab","name":"ShaderLab"}
+{"type":"language","id":"cg-hlsl","name":"Cg/HLSL"}
+{"type":"technology","id":"surface-shader","name":"Surface Shader"}
+{"type":"technology","id":"shader-graph","name":"Shader Graph"}
+{"type":"technology","id":"compute-shader","name":"Compute Shader"}
+{"type":"format","id":"online","name":"Online"}
+{"type":"format","id":"offline","name":"Offline"}
+{"type":"relation","name":"hasTheme","domain":"event","range":"concept"}
+{"type":"relation","name":"hasDomain","domain":"event","range":"technology"}
+{"type":"relation","name":"hasTechnology","domain":"event","range":"technology"}
+{"type":"relation","name":"hasFormat","domain":"event","range":"format"}
